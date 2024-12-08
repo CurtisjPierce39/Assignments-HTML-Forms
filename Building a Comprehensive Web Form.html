@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Building a Comprehensive Web Form</title>
+</head>
+<body>
+    <h1>Creating a Selection Experience</h1>
+
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Favorite Programming Language</legend>
+
+            <label for="choice">Choose a Language:</label>
+            <select name="choice" id="choice">
+                <option value="python">Python</option>
+                <option value="sql">SQL</option>
+                <option value="html">HTML</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience Level</legend>
+
+            <input type="radio" id="beginner" name="experience-level" value="beginner" required>
+            <label for="beginner">Beginner</label>
+
+            <input type="radio" id="intermediate" name="experience-level" value="intermediate" required>
+            <label for="intermediate">Intermediate</label>
+
+            <input type="radio" id="expert" name="experience-level" value="expert" required>
+            <label for="expert">Expert</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred Development Platforms</legend>
+
+            <input type="checkbox" id="web" name="preferred-platform" value="web">
+            <label for="web">Web</label>
+
+            <input type="checkbox" id="mobile" name="preferred-platform" value="mobile">
+            <label for="mobile">Mobile</label>
+
+            <input type="checkbox" id="desktop" name="preferred-platform" value="desktop">
+            <label for="desktop">Desktop</label>
+        </fieldset>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div role="alert" aria-live="assertive" id="error-message">
+        Please select an option!
+    </div>
+</body>
+</html> 
